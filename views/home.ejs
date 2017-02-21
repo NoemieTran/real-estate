@@ -3,13 +3,49 @@
 
 <head>
     <title>Home</title>
-    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+        <link rel="stylesheet" href="/assets/css/style.css" />
 </head>
 
 <body>
-    <p>Welcome to
-        <%= message %>
-    </p>
+
+    <div class="jumbotron">
+        <p> REAL ESTATE
+            <%= message %>
+        </p>
+    </div>
+
+    <div class="container">
+        <form action="/call" method="GET">
+            <p> Enter the URL here : 
+                <input type="text" , name="urlLBC">
+                <button> Ok </button>
+            </p>
+        <form/>
+    </div>
+
+        <div class="result">
+            <p> Price :
+                <label> <%= prix %> </label>
+            </p>
+            <p> City :
+                <label> <%= ville %> </label>
+            </p>
+            <p> Type : 
+                <label> <%= typeB %> </label>
+            </p>
+            <p> Surface : 
+                <label> <%= surfaceB %> </label>
+            </p>
+            <p> Meilleur Agent Price : 
+                <label> <%= BestPrice %> </label>
+            </p>
+            <p> Result : 
+                <label> <%= Res %> </label>
+            </p>
+         </div>
+
 </body>
 
 </html>
